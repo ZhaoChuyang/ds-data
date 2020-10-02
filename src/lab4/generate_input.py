@@ -7,7 +7,7 @@ _MAX_INT = 1e5
 
 def insert_operation(fb, chain: list):
     """insert element at specified index
-    NOTE: You need to guarrantee the inserted position is not greater than the length of chain.
+    NOTE: You need to guarantee the inserted position is not greater than the length of chain.
     The format of insert operation is "1 [index] [value]", i.e. insert [value] at [index].
     """
     length = len(chain)
@@ -39,18 +39,21 @@ def delete_operation(fb, chain: list, exist_ratio=0.7):
     fb.write(sentence)
 
 
-def query_operation(fb, chain: list):
+def query_operation(fb, chain: list, ratio=0.7):
     """find if specified element is in chain
     You donnot need to modify the chain.
     """
-    element = random.randint(0, _MAX_INT)
+    if random.random() < 0.7:
+        element = random.choice(chain)
+    else:
+        element = random.randint(0, _MAX_INT)
     sentence = "4 %d\n" % element
     fb.write(sentence)
 
 
 def reverse_operation(fb, chain: list):
     """reverse the chain
-    You don't necessarily need to reverse the chain actually.
+    You don't necessarily need to reverse the chain.
     """
     sentence = "3\n"
     fb.write(sentence)
