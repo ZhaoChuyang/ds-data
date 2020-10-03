@@ -1,7 +1,7 @@
 import os
 import sys
 import random
-from ..utils.config import Config
+from ...utils.config import Config
 
 _MAX_INT = 1e5
 
