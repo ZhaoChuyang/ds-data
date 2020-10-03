@@ -30,12 +30,12 @@ PROBLEM_SETTINGS = [
     ),
     dict(
         N=500,
-        Q=1000,
+        Q=500,
         OP=[INSERT, QUERY, OUTPUT],
     ),
     dict(
         N=1000,
-        Q=500,
+        Q=1000,
         OP=[INSERT, QUERY, OUTPUT],
     ),
     dict(
@@ -49,23 +49,23 @@ PROBLEM_SETTINGS = [
         OP=[INSERT, DELETE, QUERY, OUTPUT],
     ),
     dict(
-        N=500,
+        N=1000,
         Q=1000,
         OP=[INSERT, DELETE, QUERY, OUTPUT],
     ),
     dict(
-        N=1000,
-        Q=500,
+        N=5000,
+        Q=2000,
         OP=[INSERT, DELETE, QUERY, OUTPUT],
     ),
     dict(
-        N=500,
+        N=1000,
         Q=1000,
         OP=[INSERT, DELETE, QUERY, REVERSE, OUTPUT],
     ),
     dict(
-        N=1000,
-        Q=500,
+        N=5000,
+        Q=2000,
         OP=[INSERT, DELETE, QUERY, REVERSE, OUTPUT],
     ),
 ]
